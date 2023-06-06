@@ -57,6 +57,9 @@ public class RemoteControl implements Controller{
             for (int i = 0; i < this.getVolume(); i += 10) {
                 System.out.print("I");
             }
+            if (this.getVolume() >= 80) {
+                System.out.print("\n!!Warning: volume \nharmful to health!!");
+            }
             System.out.println("\n----------------");
         }
     }
@@ -70,8 +73,6 @@ public class RemoteControl implements Controller{
     public void increaseVolume() {
         if (this.isPower()) {
             this.setVolume(this.getVolume() + 10);
-        } else if (this.getVolume() >= 80) {
-            System.out.println("!!Warning: volume harmful to health!!");
         }
     }
 

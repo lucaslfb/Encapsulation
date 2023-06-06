@@ -5,7 +5,10 @@ public class Television {
         RemoteControl r0 = new RemoteControl();
         r0.turnOn();
         r0.play();
-        r0.decreaseVolume();
+        r0.increaseVolume();
+        r0.increaseVolume();
+        r0.increaseVolume();
+        r0.increaseVolume();
         r0.openMenu();
     }
 }
